@@ -91,7 +91,7 @@ Model 3, which introduces competitive price adjustment based on nearby lots, was
 Raw CSV Data (Cleaned) → Feature Engineering (Pandas) → Pathway Engine → JSONL Streaming Output
 ```
 
-![Architecture Diagram](./diagram.svg)
+![Architecture Diagram](./architecture_diagram.svg)
 
 ---
 
