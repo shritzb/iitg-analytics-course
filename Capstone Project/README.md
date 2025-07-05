@@ -24,9 +24,12 @@ This capstone project simulates a real-time dynamic pricing system for urban par
 #### Step 1: Baseline Linear Model Overview
 Formula:
 
-![image](https://github.com/user-attachments/assets/9e4d5921-2789-42fa-8063-464d73741ff4)
+![image](https://github.com/user-attachments/assets/a470bb43-94f7-4add-a885-bbc371c12836)
 
-Price was computed independently for each parking lot at every time step.
+Where:
+- 𝑃0 = $10 (base price)
+- α is a tunable parameter (e.g., 2 or 5 for moderate changes)
+- Price was computed independently for each parking lot at every time step.
 
 Step-by-Step Plan
 1. Preprocess the dataset
@@ -51,8 +54,12 @@ Plotting the BaselinePrice vs. Timestamp for one parking lot.
 Adding a hover tooltip showing price and time.
 
 ### Model 2: Demand-Based Pricing (Deployed in Pathway)
+> Create a smarter pricing model that adjusts based on demand driven by multiple features — not just occupancy.
 > Uses a weighted score of features like queue length, traffic, and vehicle type to calculate price dynamically.  
 Deployed as a real-time stream using Pathway.
+
+#### Step 1: Define a Demand Function
+Build a mathematical formula like 
 
 ### Model 3: Competitive Pricing (Planned Extension)
 > Intended to adjust price based on nearby lot prices within 1 km.
