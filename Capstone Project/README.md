@@ -17,7 +17,7 @@ This capstone project simulates a real-time dynamic pricing system for urban par
 📌 Note
 To view full plots and output, open this notebook in Google Colab.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/shritzb/iitg-analytics-course/blob/d7886c1e7085e970b674fa6eda4c16739012f569/Capstone%20Project/smart_park_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shritzb/iitg-analytics-course/blob/d7886c1e7085e970b674fa6eda4c16739012f569/Capstone%20Project/smart_park_notebook.ipynb)
 
 
 ---
