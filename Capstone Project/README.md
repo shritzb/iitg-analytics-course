@@ -21,32 +21,9 @@ This capstone project simulates a real-time dynamic pricing system for urban par
 ### Model 1: Occupancy-Based Pricing
 > A simple pricing model that increases price with occupancy.
 > 🚀 Step 1: Baseline Linear Model Overview
-🔁 Formula:
-𝑃
-𝑡
-+
-1
-=
-𝑃
-𝑡
-+
-𝛼
-⋅
-(
-Occupancy
-Capacity
-)
-P 
-t+1
-​
- =P 
-t
-​
- +α⋅( 
-Capacity
-Occupancy
-​
- )
+> Formula:
+![image](https://github.com/user-attachments/assets/b7a66a2c-67fe-419b-84ce-6ad588c51945)
+
 Where:
 
 𝑃
