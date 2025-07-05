@@ -20,41 +20,34 @@ This capstone project simulates a real-time dynamic pricing system for urban par
 
 ### Model 1: Occupancy-Based Pricing
 > A simple pricing model that increases price with occupancy.
-> 🚀 Step 1: Baseline Linear Model Overview
-> Formula:
-![image](https://github.com/user-attachments/assets/b7a66a2c-67fe-419b-84ce-6ad588c51945)
 
-Where:
+#### Step 1: Baseline Linear Model Overview
+Formula:
+![image](https://github.com/user-attachments/assets/9e4d5921-2789-42fa-8063-464d73741ff4)
 
-𝑃
-0
-=
-$
-10
-P 
-0
-​
- =$10 (base price)
+Price was computed independently for each parking lot at every time step.
 
-α is a tunable parameter (e.g., 2 or 5 for moderate changes)
-
-We’ll compute price independently for each parking lot at every time step.
-
-🔧 Step-by-Step Plan
-✅ A. Preprocess the dataset
-Convert LastUpdatedDate + LastUpdatedTime into one datetime column
-
+Step-by-Step Plan
+A. Preprocess the dataset
+Converting LastUpdatedDate + LastUpdatedTime into one datetime column
 Sort data by timestamp within each parking lot
-
-✅ B. Implement Pricing Function
+B. Implement Pricing Function
 Initialize base price = $10
-
 Loop through each lot's time series and apply the formula
-
-✅ C. Plot Pricing Over Time
+C. Plot Pricing Over Time
 Use Bokeh for interactive visualization
-
 One line per parking lot
+
+#### Step 2: Implement Pricing Logic
+1. Set base_price = 10
+2. Used 𝛼 = 2.5 as a default (this can be tuned)
+3. Iterated through each time point for each lot
+4. Applied the formula
+5. Stored the calculated price for every row
+
+#### Step 3: Visualize Price Trend (Bokeh)
+Plotting the BaselinePrice vs. Timestamp for one parking lot.
+Adding a hover tooltip showing price and time.
 
 ### Model 2: Demand-Based Pricing (Deployed in Pathway)
 > Uses a weighted score of features like queue length, traffic, and vehicle type to calculate price dynamically.  
