@@ -20,6 +20,64 @@ This capstone project simulates a real-time dynamic pricing system for urban par
 
 ### Model 1: Occupancy-Based Pricing
 > A simple pricing model that increases price with occupancy.
+> 🚀 Step 1: Baseline Linear Model Overview
+🔁 Formula:
+𝑃
+𝑡
++
+1
+=
+𝑃
+𝑡
++
+𝛼
+⋅
+(
+Occupancy
+Capacity
+)
+P 
+t+1
+​
+ =P 
+t
+​
+ +α⋅( 
+Capacity
+Occupancy
+​
+ )
+Where:
+
+𝑃
+0
+=
+$
+10
+P 
+0
+​
+ =$10 (base price)
+
+α is a tunable parameter (e.g., 2 or 5 for moderate changes)
+
+We’ll compute price independently for each parking lot at every time step.
+
+🔧 Step-by-Step Plan
+✅ A. Preprocess the dataset
+Convert LastUpdatedDate + LastUpdatedTime into one datetime column
+
+Sort data by timestamp within each parking lot
+
+✅ B. Implement Pricing Function
+Initialize base price = $10
+
+Loop through each lot's time series and apply the formula
+
+✅ C. Plot Pricing Over Time
+Use Bokeh for interactive visualization
+
+One line per parking lot
 
 ### Model 2: Demand-Based Pricing (Deployed in Pathway)
 > Uses a weighted score of features like queue length, traffic, and vehicle type to calculate price dynamically.  
