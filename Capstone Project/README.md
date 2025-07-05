@@ -23,18 +23,19 @@ This capstone project simulates a real-time dynamic pricing system for urban par
 
 #### Step 1: Baseline Linear Model Overview
 Formula:
+
 ![image](https://github.com/user-attachments/assets/9e4d5921-2789-42fa-8063-464d73741ff4)
 
 Price was computed independently for each parking lot at every time step.
 
 Step-by-Step Plan
-A. Preprocess the dataset
+1. Preprocess the dataset
 Converting LastUpdatedDate + LastUpdatedTime into one datetime column
 Sort data by timestamp within each parking lot
-B. Implement Pricing Function
+2. Implement Pricing Function
 Initialize base price = $10
 Loop through each lot's time series and apply the formula
-C. Plot Pricing Over Time
+3. Plot Pricing Over Time
 Use Bokeh for interactive visualization
 One line per parking lot
 
