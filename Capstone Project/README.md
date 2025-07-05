@@ -30,14 +30,14 @@ Price was computed independently for each parking lot at every time step.
 
 Step-by-Step Plan
 1. Preprocess the dataset
-Converting LastUpdatedDate + LastUpdatedTime into one datetime column
-Sort data by timestamp within each parking lot
+- Converting LastUpdatedDate + LastUpdatedTime into one datetime column
+- Sort data by timestamp within each parking lot
 2. Implement Pricing Function
-Initialize base price = $10
-Loop through each lot's time series and apply the formula
+- Initialize base price = $10
+- Loop through each lot's time series and apply the formula
 3. Plot Pricing Over Time
-Use Bokeh for interactive visualization
-One line per parking lot
+- Use Bokeh for interactive visualization
+- One line per parking lot
 
 #### Step 2: Implement Pricing Logic
 1. Set base_price = 10
